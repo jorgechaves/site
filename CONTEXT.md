@@ -25,6 +25,8 @@ Mantenha este arquivo livre de detalhes de implementação — é apenas um glos
 
 - `#servicos` — Serviços
 - `#diferenciais` — Por que a ClixData (diferenciais)
+- `#tecnologias` — Tecnologias que dominamos (badges de ferramentas)
+- `#setores` — Setores que atendemos (industries)
 - `#sobre` — Sobre / competências
 - `#processo` — Como trabalhamos (4 etapas)
 - `#faq` — Perguntas frequentes
