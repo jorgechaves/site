@@ -244,3 +244,88 @@ h1, h2, h3 { line-height: 1.15; color: var(--blue-900); font-weight: 800; letter
   .reveal { opacity: 1; transform: none; }
   .skill-bar i { width: var(--w); }
 }
+
+/* ===== Diferenciais / Why ===== */
+.why { background: var(--bg-alt); }
+.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.4rem; }
+.why-card {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.8rem 1.5rem; transition: transform .25s ease, box-shadow .25s ease;
+}
+.why-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+.why-icon {
+  width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center;
+  background: rgba(10,102,194,.1); color: var(--li-blue); margin-bottom: 1rem;
+}
+.why-card h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+.why-card p { color: var(--muted); font-size: .95rem; }
+
+/* ===== Processo ===== */
+.process { background: var(--bg); }
+.process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.4rem; counter-reset: step; }
+.process-step {
+  position: relative; background: var(--white); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 2.2rem 1.5rem 1.6rem; text-align: left;
+}
+.step-num {
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  background: var(--grad); color: var(--white); font-weight: 800; font-size: 1.1rem;
+  margin-bottom: 1rem; box-shadow: 0 8px 18px rgba(24,119,242,.3);
+}
+.process-step h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+.process-step p { color: var(--muted); font-size: .95rem; }
+.process-steps > li:not(:last-child)::after {
+  content: ""; position: absolute; top: 2.6rem; right: -.85rem; width: 1.7rem; height: 2px;
+  background: var(--line);
+}
+
+/* ===== FAQ ===== */
+.faq { background: var(--bg-alt); }
+.faq-container { max-width: 760px; }
+.faq-list { display: grid; gap: .8rem; }
+.faq-item {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-sm);
+  padding: 0 1.3rem; overflow: hidden; transition: box-shadow .2s, border-color .2s;
+}
+.faq-item[open] { box-shadow: var(--shadow-sm); border-color: rgba(24,119,242,.35); }
+.faq-item summary {
+  list-style: none; cursor: pointer; font-weight: 600; color: var(--blue-900);
+  padding: 1.1rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+"; color: var(--fb-blue); font-size: 1.4rem; font-weight: 700; line-height: 1;
+  transition: transform .25s ease;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { color: var(--muted); padding: 0 0 1.1rem; margin: 0; }
+
+/* ===== Scroll to top ===== */
+.to-top {
+  position: fixed; right: 1.4rem; bottom: 1.4rem; z-index: 60;
+  width: 46px; height: 46px; border-radius: 50%; border: 0; cursor: pointer;
+  background: var(--fb-blue); color: var(--white); display: grid; place-items: center;
+  box-shadow: 0 10px 24px rgba(24,119,242,.4);
+  opacity: 0; visibility: hidden; transform: translateY(12px);
+  transition: opacity .3s ease, transform .3s ease, background .2s ease;
+}
+.to-top.show { opacity: 1; visibility: visible; transform: none; }
+.to-top:hover { background: var(--blue-700); }
+
+/* ===== Active nav link ===== */
+.nav-menu a.active { color: var(--fb-blue); }
+.nav-menu a.nav-cta.active { color: var(--white); }
+
+/* ===== Responsive (new sections) ===== */
+@media (max-width: 980px) {
+  .why-grid, .process-steps { grid-template-columns: repeat(2, 1fr); }
+  .process-steps > li::after { display: none; }
+}
+@media (max-width: 560px) {
+  .why-grid, .process-steps { grid-template-columns: 1fr; }
+}
+
+/* ===== Reduced motion (new) ===== */
+@media (prefers-reduced-motion: reduce) {
+  .to-top { transition: none; }
+}

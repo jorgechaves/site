@@ -14,6 +14,8 @@
     initReveal();
     initSkillBars();
     initContactForm();
+    initScrollTop();
+    initActiveNav();
   });
 
   // ===== Footer year =====
@@ -86,6 +88,43 @@
     }, { threshold: 0.4 });
 
     bars.forEach(function (b) { observer.observe(b); });
+  }
+
+  // ===== Scroll-to-top button =====
+  function initScrollTop() {
+    var btn = document.getElementById('toTop');
+    if (!btn) return;
+    var onScroll = function () {
+      if (window.scrollY > 500) btn.classList.add('show');
+      else btn.classList.remove('show');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });
+    });
+  }
+
+  // ===== Active nav link highlighting =====
+  function initActiveNav() {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.nav-menu a[href^="#"]'));
+    var sections = links
+      .map(function (l) { return document.querySelector(l.getAttribute('href')); })
+      .filter(Boolean);
+    if (!sections.length || !('IntersectionObserver' in window)) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.id;
+          links.forEach(function (l) {
+            l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+    sections.forEach(function (s) { observer.observe(s); });
   }
 
   // ===== Contact form: validation + submission =====
