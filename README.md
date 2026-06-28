@@ -1,6 +1,6 @@
-# ClixData Dados & Infra — Site
+# ClixData Dados & BI — Site
 
-Site institucional moderno e interativo da **ClixData Dados & Infra**, empresa especializada em:
+Site institucional moderno e interativo da **ClixData Dados & BI**, empresa especializada em:
 
 - **Dashboards de BI / Business Intelligence** (serviço de destaque)
 - Administração de Banco de Dados
