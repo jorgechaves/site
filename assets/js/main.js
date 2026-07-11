@@ -194,8 +194,12 @@
 
     fetch(action, {
       method: 'POST',
-      body: new FormData(form),
-      headers: { Accept: 'application/json' }
+      body: JSON.stringify({
+        name: form.elements['name'].value.trim(),
+        email: form.elements['email'].value.trim(),
+        message: form.elements['message'].value.trim()
+      }),
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' }
     })
       .then(function (res) {
         if (res.ok) {
