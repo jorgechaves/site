@@ -3,39 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ClixData Dados &amp; BI | Dashboards de BI, Banco de Dados e Infraestrutura</title>
-  <meta name="description" content="ClixData Dados & BI: especialistas em dashboards de Business Intelligence, administração de banco de dados, ETL/ELT e infraestrutura de dados. SQL e Python no centro das nossas soluções." />
+  <title>Consultoria em BI, Banco de Dados e ETL | ClixData</title>
+  <meta name="description" content="Dashboards em Power BI, automações com SQL e Python, ETL/ELT e administração de banco de dados para empresas que querem decisões mais rápidas." />
   <meta name="theme-color" content="#ff9800" />
   <meta name="author" content="ClixData Dados & BI" />
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="ClixData Dados & BI" />
-  <meta property="og:description" content="Dashboards de BI, administração de banco de dados, ETL/ELT e infraestrutura de dados com SQL e Python." />
+  <meta property="og:title" content="Consultoria em BI, Banco de Dados e ETL | ClixData" />
+  <meta property="og:description" content="Dashboards em Power BI, automações com SQL e Python, ETL/ELT e administração de banco de dados para empresas que querem decisões mais rápidas." />
+  <meta property="og:url" content="https://clixdata.com.br/" />
   <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://clixdata.com.br/clixdata-og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ClixData Dados e BI: consultoria em BI, banco de dados e ETL" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Consultoria em BI, Banco de Dados e ETL | ClixData" />
+  <meta name="twitter:description" content="Dashboards em Power BI, automações com SQL e Python, ETL/ELT e administração de banco de dados para empresas que querem decisões mais rápidas." />
+  <meta name="twitter:image" content="https://clixdata.com.br/clixdata-og.png" />
   <link rel="canonical" href="https://clixdata.com.br/" />
 
   <!-- Structured data (SEO) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "ClixData Dados & BI",
-    "description": "Especialistas em dashboards de Business Intelligence, administração de banco de dados, ETL/ELT e infraestrutura de dados, com SQL e Python.",
-    "url": "https://clixdata.com.br/",
-    "email": "contato@clixdata.com.br",
-    "areaServed": "BR",
-    "knowsAbout": ["Business Intelligence", "Dashboards", "SQL", "Python", "ETL", "ELT", "Banco de Dados", "Infraestrutura de Dados"],
-    "makesOffer": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Intelligence" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Administração de Banco de Dados" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ETL / ELT" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Infraestrutura de Dados" } }
+    "@graph": [
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://clixdata.com.br/#organization",
+        "name": "ClixData Dados & BI",
+        "url": "https://clixdata.com.br/",
+        "logo": "https://clixdata.com.br/clixdata.png",
+        "image": "https://clixdata.com.br/clixdata-og.png",
+        "description": "Consultoria em Business Intelligence, dashboards Power BI, SQL, Python, ETL/ELT, administração de banco de dados e infraestrutura de dados.",
+        "email": "contato@clixdata.com.br",
+        "areaServed": { "@type": "Country", "name": "Brasil" },
+        "knowsAbout": ["Business Intelligence", "Dashboards Power BI", "SQL", "Python", "ETL", "ELT", "Administração de Banco de Dados", "Engenharia de Dados", "Infraestrutura de Dados"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contato@clixdata.com.br",
+          "contactType": "sales",
+          "areaServed": "BR",
+          "availableLanguage": "pt-BR"
+        },
+        "makesOffer": [
+          { "@type": "Offer", "itemOffered": { "@id": "https://clixdata.com.br/business-intelligence/#service" } },
+          { "@type": "Offer", "itemOffered": { "@id": "https://clixdata.com.br/banco-de-dados/#service" } },
+          { "@type": "Offer", "itemOffered": { "@id": "https://clixdata.com.br/etl-elt/#service" } },
+          { "@type": "Offer", "itemOffered": { "@id": "https://clixdata.com.br/infraestrutura-de-dados/#service" } }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://clixdata.com.br/#website",
+        "name": "ClixData Dados & BI",
+        "url": "https://clixdata.com.br/",
+        "publisher": { "@id": "https://clixdata.com.br/#organization" },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://clixdata.com.br/#services",
+        "name": "Serviços da ClixData",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "url": "https://clixdata.com.br/business-intelligence/" },
+          { "@type": "ListItem", "position": 2, "url": "https://clixdata.com.br/banco-de-dados/" },
+          { "@type": "ListItem", "position": 3, "url": "https://clixdata.com.br/etl-elt/" },
+          { "@type": "ListItem", "position": 4, "url": "https://clixdata.com.br/infraestrutura-de-dados/" }
+        ]
+      }
     ]
   }
   </script>
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231877F2'/%3E%3Cpath d='M9 21V15M16 21V9M23 21V13' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ff9800'/%3E%3Cpath d='M9 21V15M16 21V9M23 21V13' stroke='%23202124' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,7 +90,7 @@
   <!-- ===== Header / Navigation ===== -->
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Navegação principal">
-      <a href="#top" class="brand" aria-label="ClixData Dados e BI — início">
+      <a href="#top" class="brand" aria-label="ClixData Dados e BI - início">
         <img class="brand-logo" src="clixdata.png" alt="" width="132" height="74" />
         <span class="brand-text">ClixData <span class="brand-sub">Dados &amp; BI</span></span>
       </a>
@@ -97,7 +139,7 @@
           <div class="dashboard-card" aria-label="Exemplo visual de dashboard de dados">
             <div class="dash-header">
               <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-              <span class="dash-title">ClixData · visão executiva</span>
+              <span class="dash-title">ClixData · exemplo de painel</span>
             </div>
             <div class="dash-body">
               <div class="dash-toolbar">
@@ -105,9 +147,9 @@
                 <strong>Atualizado agora</strong>
               </div>
               <div class="dash-kpis">
-                <div class="kpi"><span class="kpi-label">Receita</span><span class="kpi-value">R$ 1,2M</span></div>
-                <div class="kpi"><span class="kpi-label">Conversão</span><span class="kpi-value">8,4%</span></div>
-                <div class="kpi"><span class="kpi-label">SLA</span><span class="kpi-value">99,9%</span></div>
+                <div class="kpi"><span class="kpi-label">Indicador</span><span class="kpi-value">KPI 01</span></div>
+                <div class="kpi"><span class="kpi-label">Meta</span><span class="kpi-value">+12%</span></div>
+                <div class="kpi"><span class="kpi-label">Status</span><span class="kpi-value">OK</span></div>
               </div>
               <div class="dash-chart">
                 <span style="--h:42%"></span><span style="--h:66%"></span><span style="--h:38%"></span>
@@ -152,6 +194,7 @@
             <h3>Business Intelligence</h3>
             <p>Criamos painéis executivos e operacionais que conectam metas, indicadores e acompanhamento diário em uma única visão.</p>
             <ul class="service-tags"><li>Power BI</li><li>SQL</li><li>Python</li></ul>
+            <a class="service-link" href="/business-intelligence/">Ver consultoria em BI</a>
           </article>
 
           <article class="service-card reveal">
@@ -161,6 +204,7 @@
             <h3>Administração de Banco de Dados</h3>
             <p>Modelagem, tuning, alta disponibilidade, backup e segurança. Mantemos seus bancos de dados rápidos, confiáveis e protegidos.</p>
             <ul class="service-tags"><li>PostgreSQL</li><li>SQL Server</li><li>MySQL</li></ul>
+            <a class="service-link" href="/banco-de-dados/">Ver banco de dados</a>
           </article>
 
           <article class="service-card reveal">
@@ -170,6 +214,7 @@
             <h3>ETL / ELT</h3>
             <p>Pipelines de dados robustos que extraem, transformam e carregam informações de múltiplas fontes com qualidade e governança.</p>
             <ul class="service-tags"><li>Python</li><li>SQL</li></ul>
+            <a class="service-link" href="/etl-elt/">Ver ETL/ELT</a>
           </article>
 
           <article class="service-card reveal">
@@ -179,6 +224,7 @@
             <h3>Infraestrutura de Dados</h3>
             <p>Arquitetura, provisionamento e administração da infraestrutura que sustenta seus dados — em nuvem ou on-premise, com escala e resiliência.</p>
             <ul class="service-tags"><li>Cloud</li><li>Data Warehouse</li><li>DevOps</li></ul>
+            <a class="service-link" href="/infraestrutura-de-dados/">Ver infraestrutura</a>
           </article>
         </div>
       </div>

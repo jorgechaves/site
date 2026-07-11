@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administração de Banco de Dados SQL | ClixData</title>
+  <meta name="description" content="Administração de banco de dados com modelagem, tuning, backup, segurança e suporte para ambientes PostgreSQL, SQL Server, MySQL e dados corporativos." />
+  <meta name="theme-color" content="#ff9800" />
+  <meta name="author" content="ClixData Dados & BI" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Administração de Banco de Dados SQL | ClixData" />
+  <meta property="og:description" content="Modelagem, tuning, backup, segurança e operação para bancos de dados mais confiáveis." />
+  <meta property="og:url" content="https://clixdata.com.br/banco-de-dados/" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://clixdata.com.br/clixdata-og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ClixData Dados e BI: administração de banco de dados SQL" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Administração de Banco de Dados SQL | ClixData" />
+  <meta name="twitter:description" content="Modelagem, tuning, backup, segurança e operação para bancos de dados mais confiáveis." />
+  <meta name="twitter:image" content="https://clixdata.com.br/clixdata-og.png" />
+  <link rel="canonical" href="https://clixdata.com.br/banco-de-dados/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://clixdata.com.br/#organization",
+        "name": "ClixData Dados & BI",
+        "url": "https://clixdata.com.br/",
+        "logo": "https://clixdata.com.br/clixdata.png",
+        "email": "contato@clixdata.com.br",
+        "areaServed": { "@type": "Country", "name": "Brasil" },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contato@clixdata.com.br",
+          "contactType": "sales",
+          "areaServed": "BR",
+          "availableLanguage": "pt-BR"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://clixdata.com.br/banco-de-dados/#service",
+        "name": "Administração de Banco de Dados",
+        "serviceType": "Database Administration",
+        "provider": { "@id": "https://clixdata.com.br/#organization" },
+        "areaServed": { "@type": "Country", "name": "Brasil" },
+        "url": "https://clixdata.com.br/banco-de-dados/",
+        "description": "Administração de banco de dados SQL com modelagem, tuning, backup, segurança, disponibilidade e suporte para ambientes de dados."
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ff9800'/%3E%3Cpath d='M9 21V15M16 21V9M23 21V13' stroke='%23202124' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body class="service-page">
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="/" class="brand" aria-label="ClixData Dados e BI - início">
+        <img class="brand-logo" src="/clixdata.png" alt="" width="132" height="74" />
+        <span class="brand-text">ClixData <span class="brand-sub">Dados &amp; BI</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/#servicos">Serviços</a></li>
+        <li><a href="/#diferenciais">Diferenciais</a></li>
+        <li><a href="/#setores">Setores</a></li>
+        <li><a href="/#tecnologias">Tecnologias</a></li>
+        <li><a href="/#processo">Processo</a></li>
+        <li><a href="/#contato" class="nav-cta">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="service-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container service-hero-grid">
+        <div class="service-hero-copy reveal">
+          <p class="eyebrow">Administração de Banco de Dados</p>
+          <h1>Bancos de dados mais rápidos, seguros e confiáveis.</h1>
+          <p class="hero-lead">
+            A ClixData apoia empresas na modelagem, manutenção e administração de banco de dados para reduzir lentidão, risco operacional e dúvidas sobre disponibilidade das informações.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/#contato">Solicitar diagnóstico</a>
+            <a class="btn btn-ghost" href="/#servicos">Ver outros serviços</a>
+          </div>
+        </div>
+        <aside class="service-summary reveal" aria-label="Resumo do serviço">
+          <h2>O que entregamos</h2>
+          <ul>
+            <li>Modelagem e revisão de estrutura SQL</li>
+            <li>Tuning de consultas e performance</li>
+            <li>Rotinas de backup e recuperação</li>
+            <li>Segurança, permissões e disponibilidade</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section service-content">
+      <div class="container service-content-grid">
+        <article class="content-panel reveal">
+          <p class="eyebrow">Problemas resolvidos</p>
+          <h2>Quando o banco de dados sustenta a operação</h2>
+          <p>
+            A administração de banco de dados é essencial quando sistemas ficam lentos, consultas demoram, backups não são claros ou o crescimento da operação pressiona a infraestrutura. A ClixData atua para tornar o ambiente mais estável e previsível.
+          </p>
+          <p>
+            O trabalho considera modelagem, índices, consultas, segurança e rotinas operacionais para que PostgreSQL, SQL Server, MySQL ou outros ambientes relacionais apoiem decisões e processos com menos risco.
+          </p>
+        </article>
+        <article class="content-panel reveal">
+          <p class="eyebrow">Entregáveis típicos</p>
+          <h2>Base organizada para operar melhor</h2>
+          <ul class="check-list">
+            <li>Diagnóstico de performance e gargalos</li>
+            <li>Revisão de tabelas, índices e consultas SQL</li>
+            <li>Plano de backup, restore e retenção</li>
+            <li>Orientação de permissões e segurança</li>
+            <li>Documentação de rotinas críticas</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section service-band">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Aplicações comuns</p>
+          <h2>Banco de dados com menos atrito</h2>
+        </header>
+        <div class="mini-card-grid">
+          <article class="mini-card reveal"><h3>Performance</h3><p>Consultas, índices e rotinas mais eficientes.</p></article>
+          <article class="mini-card reveal"><h3>Segurança</h3><p>Permissões, acessos e práticas de proteção.</p></article>
+          <article class="mini-card reveal"><h3>Continuidade</h3><p>Backup, restore e redução de risco operacional.</p></article>
+          <article class="mini-card reveal"><h3>Governança</h3><p>Dados mais claros para BI, ETL e sistemas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-faq">
+      <div class="container faq-container">
+        <header class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Dúvidas sobre banco de dados</h2>
+        </header>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>Vocês trabalham com quais bancos?</summary>
+            <p>O site destaca PostgreSQL, SQL Server e MySQL, além de práticas aplicáveis a ambientes SQL e dados corporativos.</p>
+          </details>
+          <details class="faq-item">
+            <summary>É possível melhorar performance sem trocar de sistema?</summary>
+            <p>Frequentemente há ganhos por meio de revisão de consultas, índices, modelagem, rotinas e configuração. O diagnóstico identifica o caminho mais adequado.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Backup também faz parte do serviço?</summary>
+            <p>Sim. Rotinas de backup, recuperação e retenção fazem parte dos pontos avaliados quando o objetivo é confiabilidade operacional.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section related-services">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Serviços relacionados</p>
+          <h2>Conecte banco, BI e pipelines</h2>
+        </header>
+        <div class="related-grid">
+          <a class="related-card reveal" href="/business-intelligence/"><strong>Business Intelligence</strong><span>Dashboards Power BI e indicadores.</span></a>
+          <a class="related-card reveal" href="/etl-elt/"><strong>ETL / ELT</strong><span>Integração e tratamento de dados.</span></a>
+          <a class="related-card reveal" href="/infraestrutura-de-dados/"><strong>Infraestrutura</strong><span>Arquitetura para ambientes de dados.</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact service-cta" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Próximo passo</p>
+          <h2>Seu banco precisa de mais estabilidade?</h2>
+          <p>Conte onde aparecem lentidão, falhas ou riscos. A ClixData avalia o ambiente e sugere prioridades de correção.</p>
+        </div>
+        <div class="contact-form reveal">
+          <h3>Fale com a ClixData</h3>
+          <p>Envie uma mensagem pelo formulário da homepage ou escreva para <a href="mailto:contato@clixdata.com.br">contato@clixdata.com.br</a>.</p>
+          <a class="btn btn-primary btn-block" href="/#contato">Abrir formulário de contato</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="m6 14 6-6 6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="/" class="brand">
+        <img class="brand-logo footer-logo" src="/clixdata.png" alt="" width="118" height="66" />
+        <span class="brand-text">ClixData <span class="brand-sub">Dados &amp; BI</span></span>
+      </a>
+      <p class="footer-copy">&copy; <span id="year"></span> ClixData Dados &amp; BI. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

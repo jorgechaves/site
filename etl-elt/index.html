@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pipeline ETL e ELT com SQL e Python | ClixData</title>
+  <meta name="description" content="Pipelines ETL/ELT com SQL e Python para integração, qualidade, automação e preparação de dados para BI, banco de dados e análise." />
+  <meta name="theme-color" content="#ff9800" />
+  <meta name="author" content="ClixData Dados & BI" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pipeline ETL e ELT com SQL e Python | ClixData" />
+  <meta property="og:description" content="Integração, qualidade e automação de dados com pipelines ETL/ELT em SQL e Python." />
+  <meta property="og:url" content="https://clixdata.com.br/etl-elt/" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://clixdata.com.br/clixdata-og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ClixData Dados e BI: pipelines ETL e ELT com SQL e Python" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pipeline ETL e ELT com SQL e Python | ClixData" />
+  <meta name="twitter:description" content="Integração, qualidade e automação de dados com pipelines ETL/ELT em SQL e Python." />
+  <meta name="twitter:image" content="https://clixdata.com.br/clixdata-og.png" />
+  <link rel="canonical" href="https://clixdata.com.br/etl-elt/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://clixdata.com.br/#organization",
+        "name": "ClixData Dados & BI",
+        "url": "https://clixdata.com.br/",
+        "logo": "https://clixdata.com.br/clixdata.png",
+        "email": "contato@clixdata.com.br",
+        "areaServed": { "@type": "Country", "name": "Brasil" },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contato@clixdata.com.br",
+          "contactType": "sales",
+          "areaServed": "BR",
+          "availableLanguage": "pt-BR"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://clixdata.com.br/etl-elt/#service",
+        "name": "Pipelines ETL e ELT",
+        "serviceType": "Data Integration",
+        "provider": { "@id": "https://clixdata.com.br/#organization" },
+        "areaServed": { "@type": "Country", "name": "Brasil" },
+        "url": "https://clixdata.com.br/etl-elt/",
+        "description": "Pipelines ETL/ELT com SQL e Python para extrair, transformar, carregar, validar e automatizar dados para BI e análise."
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ff9800'/%3E%3Cpath d='M9 21V15M16 21V9M23 21V13' stroke='%23202124' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body class="service-page">
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="/" class="brand" aria-label="ClixData Dados e BI - início">
+        <img class="brand-logo" src="/clixdata.png" alt="" width="132" height="74" />
+        <span class="brand-text">ClixData <span class="brand-sub">Dados &amp; BI</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/#servicos">Serviços</a></li>
+        <li><a href="/#diferenciais">Diferenciais</a></li>
+        <li><a href="/#setores">Setores</a></li>
+        <li><a href="/#tecnologias">Tecnologias</a></li>
+        <li><a href="/#processo">Processo</a></li>
+        <li><a href="/#contato" class="nav-cta">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="service-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container service-hero-grid">
+        <div class="service-hero-copy reveal">
+          <p class="eyebrow">Pipelines ETL / ELT</p>
+          <h1>Dados integrados, tratados e prontos para análise.</h1>
+          <p class="hero-lead">
+            A ClixData constrói pipelines ETL e ELT para extrair dados de múltiplas fontes, aplicar regras de qualidade e manter bases atualizadas para BI, banco de dados e análise.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/#contato">Solicitar diagnóstico</a>
+            <a class="btn btn-ghost" href="/#servicos">Ver outros serviços</a>
+          </div>
+        </div>
+        <aside class="service-summary reveal" aria-label="Resumo do serviço">
+          <h2>O que entregamos</h2>
+          <ul>
+            <li>Extração e integração de fontes de dados</li>
+            <li>Transformações com SQL e Python</li>
+            <li>Validações e regras de qualidade</li>
+            <li>Rotinas automatizadas para BI e análise</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section service-content">
+      <div class="container service-content-grid">
+        <article class="content-panel reveal">
+          <p class="eyebrow">Problemas resolvidos</p>
+          <h2>Quando os dados precisam chegar no lugar certo</h2>
+          <p>
+            Pipelines ETL/ELT são indicados quando a empresa depende de extrações manuais, bases desalinhadas ou dados que chegam tarde demais para apoiar a decisão. A ClixData desenha fluxos para integrar, transformar e carregar informações com mais previsibilidade.
+          </p>
+          <p>
+            A implementação pode combinar SQL, Python, bancos relacionais, arquivos, APIs e bases analíticas, sempre com foco em qualidade e uso prático para dashboards, relatórios e operação.
+          </p>
+        </article>
+        <article class="content-panel reveal">
+          <p class="eyebrow">Entregáveis típicos</p>
+          <h2>Pipeline claro e auditável</h2>
+          <ul class="check-list">
+            <li>Mapeamento de fontes, destinos e regras de transformação</li>
+            <li>Scripts ou rotinas de carga em SQL e Python</li>
+            <li>Tratamento de duplicidade, formato e consistência</li>
+            <li>Logs, validações e documentação do fluxo</li>
+            <li>Base pronta para dashboards Power BI e análise</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section service-band">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Aplicações comuns</p>
+          <h2>Fluxos de dados para rotinas críticas</h2>
+        </header>
+        <div class="mini-card-grid">
+          <article class="mini-card reveal"><h3>Integração</h3><p>Consolidação de dados de sistemas, arquivos e bases.</p></article>
+          <article class="mini-card reveal"><h3>Qualidade</h3><p>Validação, padronização e tratamento de inconsistências.</p></article>
+          <article class="mini-card reveal"><h3>Automação</h3><p>Menos tarefas manuais e mais recorrência confiável.</p></article>
+          <article class="mini-card reveal"><h3>BI</h3><p>Dados preparados para relatórios e dashboards.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-faq">
+      <div class="container faq-container">
+        <header class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Dúvidas sobre ETL e ELT</h2>
+        </header>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>Qual a diferença entre ETL e ELT?</summary>
+            <p>ETL transforma os dados antes da carga no destino. ELT carrega primeiro e transforma depois, geralmente em bancos ou ambientes analíticos. A escolha depende do cenário.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Python pode ser usado nos pipelines?</summary>
+            <p>Sim. Python é uma competência central da ClixData e pode apoiar extrações, transformações, validações e automações.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Os pipelines alimentam dashboards?</summary>
+            <p>Sim. Um objetivo comum é manter bases confiáveis para dashboards Power BI, relatórios e análises recorrentes.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section related-services">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Serviços relacionados</p>
+          <h2>Da integração à decisão</h2>
+        </header>
+        <div class="related-grid">
+          <a class="related-card reveal" href="/business-intelligence/"><strong>Business Intelligence</strong><span>Dashboards para consumir dados tratados.</span></a>
+          <a class="related-card reveal" href="/banco-de-dados/"><strong>Banco de Dados</strong><span>Ambiente confiável para armazenar dados.</span></a>
+          <a class="related-card reveal" href="/infraestrutura-de-dados/"><strong>Infraestrutura</strong><span>Arquitetura para escalar fluxos de dados.</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact service-cta" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Próximo passo</p>
+          <h2>Quer automatizar seus fluxos de dados?</h2>
+          <p>Conte quais fontes, sistemas e rotinas hoje dependem de trabalho manual. A ClixData ajuda a desenhar um pipeline mais confiável.</p>
+        </div>
+        <div class="contact-form reveal">
+          <h3>Fale com a ClixData</h3>
+          <p>Envie uma mensagem pelo formulário da homepage ou escreva para <a href="mailto:contato@clixdata.com.br">contato@clixdata.com.br</a>.</p>
+          <a class="btn btn-primary btn-block" href="/#contato">Abrir formulário de contato</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="m6 14 6-6 6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="/" class="brand">
+        <img class="brand-logo footer-logo" src="/clixdata.png" alt="" width="118" height="66" />
+        <span class="brand-text">ClixData <span class="brand-sub">Dados &amp; BI</span></span>
+      </a>
+      <p class="footer-copy">&copy; <span id="year"></span> ClixData Dados &amp; BI. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
